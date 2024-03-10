@@ -9,6 +9,7 @@ import MovieDetail from "./components/movies/MovieDetail.jsx";
 import PopularMovies from "./components/movies/PopularMovies.jsx";
 import UpcomingMovies from "./components/movies/UpcomingMovies.jsx";
 import SearchMovies from "./components/movies/SearchMovies.jsx";
+import PrivateRoute from "./components/auth/PrivateRoute.jsx";
 
 export const router = createBrowserRouter([
   {
@@ -17,31 +18,31 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home />,
+        element: <PrivateRoute element={<Home />} />,
       },
       {
         path: "contentCategory",
-        element: <ContentCategory />,
+        element: <PrivateRoute element={<ContentCategory />} />,
       },
       {
         path: "/contentCategory/:genreId",
-        element: <ContentDetails />,
+        element: <PrivateRoute element={<ContentDetails />} />,
       },
       {
         path: "/movie/:id",
-        element: <MovieDetail />,
+        element: <PrivateRoute element={<MovieDetail />} />,
       },
       {
         path: "/popularMovies",
-        element: <PopularMovies />,
+        element: <PrivateRoute element={<PopularMovies />} />,
       },
       {
         path: "/UpcomingMovies",
-        element: <UpcomingMovies />,
+        element: <PrivateRoute element={<UpcomingMovies />} />,
       },
       {
         path: "/searchMovies",
-        element: <SearchMovies />,
+        element: <PrivateRoute element={<SearchMovies />} />,
       },
     ],
   },

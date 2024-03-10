@@ -1,8 +1,16 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import Logout from "./auth/Logout";
+import React, { useContext } from "react";
+import { AuthContext } from "../context/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const { logout } = useContext(AuthContext);
+  const navigate = useNavigate();
+  const handleLogout = () => {
+    logout();
+    navigate("/login");
+  };
   return (
     <div className='daisy-navbar bg-gray-900 z-20'>
       <div className='daisy-navbar-start'>
@@ -70,8 +78,8 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div className='daisy-navbar-end'>
-        <a className='daisy-btn'>
+      <div className='daisy-navbar-end '>
+        <a className='daisy-btn' onClick={handleLogout}>
           <Logout />
         </a>
       </div>

@@ -14,7 +14,6 @@ const Login = () => {
     e.preventDefault();
 
     try {
-   
       const userCredential = await signInWithEmailAndPassword(
         auth,
         email,
@@ -22,7 +21,6 @@ const Login = () => {
       );
       const user = userCredential.user;
 
- 
       login({
         uid: user.uid,
         email: user.email,
@@ -31,9 +29,9 @@ const Login = () => {
       setEmail("");
       setPassword("");
       setError(null);
-      setTimeout(() => {
-        navigate("/");
-      }, 100);
+
+      // No es necesario el setTimeout para navegar, ya que el estado se actualiza
+      navigate("/");
     } catch (error) {
       setError(error.message);
     }

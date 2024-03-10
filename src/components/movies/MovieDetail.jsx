@@ -101,14 +101,14 @@ const MovieDetail = () => {
       <header className='text-center my-8'>
         <h1 className='text-3xl font-bold'>{movie.title}</h1>
       </header>
-      <div className='flex justify-center items-center gap-8'>
-        <div className='xl:w-[80%] w-full flex rounded-lg overflow-hidden shadow-md'>
+      <div className='flex  justify-center items-center gap-8'>
+        <div className='xl:w-[80%] w-full  items-center md:items-stretch flex flex-col md:flex-row rounded-lg overflow-hidden shadow-md'>
           <img
             src={`https://image.tmdb.org/t/p/w1280${movie.poster_path}`}
             alt={movie.title}
-            className='w-56 h-auto object-cover'
+            className='w-56 rounded-lg md:rounded-none h-auto object-cover'
           />
-          <div className='p-4 bg-gray-700'>
+          <div className='p-4 rounded-lg md:rounded-none bg-gray-700'>
             <div className='mb-4'>
               <h3 className='text-lg font-bold mb-2'>Overview</h3>
               <p className='text-white'>{movie.overview}</p>
