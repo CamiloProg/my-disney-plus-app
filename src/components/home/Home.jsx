@@ -6,7 +6,7 @@ const Home = () => {
   const [genreList, setGenreList] = useState([]);
   const [visibleCategories, setVisibleCategories] = useState(6);
   const [selectedCategoryName, setSelectedCategoryName] =
-    useState("Movie Search App");
+    useState("Categories");
   const [categoryImages, setCategoryImages] = useState({});
   const navigate = useNavigate();
   const API_KEY = "39a0cddb8f1e47f844fe1db8b89c5139";
