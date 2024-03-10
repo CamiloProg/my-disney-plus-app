@@ -52,8 +52,9 @@ npm run dev
 
 Te podras registrar desde el boton "Register" bajo el formulario del Log in, o puedes entrar con la siguiente cuenta de prueba:
 
-email: test@test.com
-password: testtest
+Email: test@test.com
+
+Password: testtest
 
 Aqui podras ver las categorias y elegir alguna, luego te redireccionara a todas las peliculas que hacen parte de esta categoria. Podras darle click a cualquiera y veras a continuacion todos sus detalles y video trailer de la misma.
 
@@ -63,9 +64,9 @@ En el navbar hay diferentes opciones, como un buscador de peliculas en el cual p
 
 ## Construido con 🛠️
  ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)  ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)   ![ReactJS](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
- ![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)   ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white) 
+ ![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)   ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white) ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 
 
  ## Deploy 📈 
 Aqui puedes probar la pagina desde una web ya creada
-[Demo](https://camiloprog-pruebaswetro.netlify.app/)
+[Demo](https://main--movieapp-bemaster.netlify.app/)

@@ -11,6 +11,6 @@ export default {
     themes: ['dark', 'light'],
     prefix: 'daisy-'
   },
-  darkMode: 'class'
+  darkMode: 'dark'
 }
 
