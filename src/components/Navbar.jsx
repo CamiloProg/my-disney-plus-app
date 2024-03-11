@@ -37,6 +37,11 @@ const Navbar = () => {
           </div>
           <ul className='daisy-menu daisy-menu-sm daisy-dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52'>
             <li>
+              <Link to={"/"}>
+                <a>Categories</a>
+              </Link>
+            </li>
+            <li>
               <Link to={"/searchMovies"}>
                 <a>Search Movies</a>
               </Link>
@@ -60,6 +65,11 @@ const Navbar = () => {
       </div>
       <div className='daisy-navbar-center hidden lg:flex'>
         <ul className='daisy-menu daisy-menu-horizontal gap-3 px-1'>
+          <li>
+            <Link to={"/"}>
+              <a>Categories</a>
+            </Link>
+          </li>
           <li>
             <Link to={"/searchMovies"}>
               <a>Search Movies</a>
