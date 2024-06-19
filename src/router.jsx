@@ -18,31 +18,31 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <PrivateRoute element={<Home />} />,
+        element: <Home />,
       },
       {
         path: "contentCategory",
-        element: <PrivateRoute element={<ContentCategory />} />,
+        element: <ContentCategory />,
       },
       {
         path: "/contentCategory/:genreId",
-        element: <PrivateRoute element={<ContentDetails />} />,
+        element: <ContentDetails />,
       },
       {
         path: "/movie/:id",
-        element: <PrivateRoute element={<MovieDetail />} />,
+        element: <MovieDetail />,
       },
       {
         path: "/popularMovies",
-        element: <PrivateRoute element={<PopularMovies />} />,
+        element: <PopularMovies />,
       },
       {
         path: "/UpcomingMovies",
-        element: <PrivateRoute element={<UpcomingMovies />} />,
+        element: <UpcomingMovies />,
       },
       {
         path: "/searchMovies",
-        element: <PrivateRoute element={<SearchMovies />} />,
+        element: <SearchMovies />,
       },
     ],
   },
